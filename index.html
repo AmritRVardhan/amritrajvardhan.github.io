@@ -1,21 +1,198 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <title>Title</title>
-        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index2.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".logo-individual-container:first").click(function(){
+                    $(".detail-grid-container-stack:nth-child(2)").css("z-index", 11);
+                    $(".detail-grid-container-stack:first").css("z-index", 111);
+                });
+                $(".logo-individual-container:nth-child(2)").click(function(){
+                    $(".detail-grid-container-stack:nth-child(2)").css("z-index", 111);
+                    $(".detail-grid-container-stack:first").css("z-index", 11);
+                    // alert(2);
+                });
+            });
+        </script>
     </head>
     <body>
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-        <div class="container">
-            <div class="header">Header</div>
-            <div class="panel left">Left panel
-            <!-- <img src="https://github.com/AmritRVardhan/amritrvardhan.github.io/blob/14cbc9c01a2f9f74fdb8545213f1703e69429069/IMG20230422170009%20(1).jpg" alt="me eating watermelon with my laptop infront"> -->
+        <div class="flex-container">
+            <div class="header">
+                <!-- <ul>
+                    <li><a href="#">Top</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact me</a></li>
+                </ul> -->
+                <ul>
+                    <li><a href+"#>Resume</a></li>
+                    <li><a href="https://github.com/AmritRVardhan"><i class="fa fa-github" style="font-size:24px;color:red"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/amrit-raj-vardhan/"><i class="fa fa-linkedin-square" style="font-size:24px;color: #0072b1;"></i></a></li>
+                </ul>
             </div>
-            <div class="mainbody">Main body</div>
-            <div class="panel right">Right panel</div>
-            <div class="footer">Footer</div>
+            
+            <div class="image-container popout">
+                <!-- <img src="IMG20230429191813-02.jpeg", alt="Self-Portrait", class="rcorners"> -->
+                <div class="flip-container">
+                    <div class="flipper">
+                        <div class="front rcorners"></div>
+                        <div class="back rcorners">
+                            
+                            I am a jack of all trades as a developer. I am passionate about programming. I have worked on Python, C, VBA, Java, C++. I have an impostor syndrome that strives me to work harder. I love to solve problems, be the go-to guy for solutions. Making this website I learned HTML, CSS without any JS. <br>In my free time, I play Chess, Overwatch, AoE2 and learn more about Data Science.
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="image-container popout flip-container"> -->
+                <!-- <img src="IMG20230429191813-02.jpeg", alt="Self-Portrait", class="rcorners"> -->
+                
+            <!-- </div> -->
+            <!-- <div class="image-about-container"></div> -->
+            <div class="about-education-container">
+                <div class="about-container">
+                    <div class="typed">
+                        <h1>
+                            Amrit Raj Vardhan
+                        </h1>
+                        <div id="hideMe">
+                            Look what the recession made me do
+                        </div>
+                    </div>
+                    <div class="lineUp">Hi, I am a Software Developer with a Master's in Computer Science. I have a 3+ years of experience in Banking domain.
+                    My focus is in Machine Learning and Deep Learning involving vision-nlp based tasks with a consideration of ethical AI.
+                    </div>
+                </div>
+                <div class="skills-container lineUp">
+                    <div class="skills-lang">
+                        Languages I speak
+                    </div>
+                    <div class="skills-individual">
+                        Python
+                    </div>
+                    <div class="skills-individual">
+                        C
+                    </div>
+                    <div class="skills-individual">
+                        C++
+                    </div>
+                    <div class="skills-individual">
+                        Java
+                    </div>
+                    <div class="skills-individual">
+                        R
+                    </div>
+                    <div class="skills-individual">
+                        MATLAB
+                    </div>
+                    <div class="skills-individual">
+                        HTML
+                    </div>
+                    <div class="skills-individual">
+                        CSS
+                    </div>
+                    <div class="skills-individual">
+                        SQL
+                    </div>
+                    <div class="break"></div>
+                    <div class="skills-lang">
+                        Dev Tools/Frameworks
+                    </div>
+                    <div class="skills-individual">
+                        Tensorflow
+                    </div>
+                    <div class="skills-individual">
+                        pytorch
+                    </div>
+                    <div class="skills-individual">
+                        Github
+                    </div>
+                    <div class="skills-individual">
+                        AWS
+                    </div>
+                    <div class="skills-individual">
+                        Tableau
+                    </div>
+                    <div class="skills-individual">
+                        BluePrism
+                    </div>
+                    <div class="skills-individual">
+                        JIRA
+                    </div>
+                </div>
+                    
+                
+                <div class="education-container lineUp">
+                    <h1>Education</h1>
+                    <h3>Master's in Computer Science from University Of Illinois, Chicago
+                        <br>
+                        <div id="hover-content" class="gpa-container">
+                            Relevant Courses: Intro to ML, Advanced ML, NLP, Statistical NLP, Socially Responsible AI | GPA 3.77/4
+                        </div>
+                    </h3>
+                    <h3>Bachelor's in Computer Science from Kalinga Institute Of Industrial Technology
+                        <br>
+                        <div id="hover-content" class="gpa-container"> GPA 7.9/10</div>
+                    </h3>
+                    
+                </div>
+            </div>
+            <hr>
+            
+            <div class="experience-container">
+                <h1><span>Work Experience</span></h1>
+                <div class = "experience-logo-details-container">
+                    <div class = "logo-container">
+                        <div class="logo-individual-container grow">
+                            <img src="C:\Users\amrit\OneDrive\Desktop\website\barclays_logo_icon_168535.png" width="256" height="128">
+                        </div>
+                        <div class="logo-individual-container grow">
+                            <img src="C:\Users\amrit\OneDrive\Desktop\website\university-of-illinois-at-chicago-uic-logo-vector.png" width="256" height="142">
+                        </div>
+                    </div>
+                    <div class="detail-container">
+                        <div class ="detail-grid-container">
+                            <div class="detail-grid-container-stack">
+                                <div class="work-experience-timeline">
+                                    July 2017 - September 2020
+                                </div>
+                                <ul>
+                                    <li>Lead developer for a Know-Your-Customer project by leveraging BluePrism, VB, VBA, AWS, and jQuery that involved the automation of 3 applications to save 0.5 million USD per year. Was nominated for best deliveries in 2019.</li>
+                                    <li>Designed and developed 4 Robotic Process Automation solutions with RESTful APIs, thereby leading to a total cost saving of 2.25 million USD annually.</li>
+                                    <li>Utilized kNN, K-means to work on car insurance, clustering methods, and Siamese network in PyTorch, and TF to identify car damage on an unlabeled dataset, achieving an impressive 92% accuracy in predicting damaged pairs with the Siamese network.</li>
+                                    <li>Designed multiple end-to-end solution architectures and mentored 5 junior developers.</li>
+                                    <li>Created Software-as-a-service, “Saas”, known as “SRR”,  which processed incoming stock trades coming in from various applications leveraging computer vision techniques such as Tesseract(OCR), thereby reducing the manual efforts of the Asia Pacific team by 48% or 0.75M USD annually.</li>
+                                    <li>Modeled a Classifier using ML models(SVM, k-means, RandomForest) to de-clutter and automatically classify emails for HR. Cross-validation gave an effectiveness of 97%.</li>
+                                </ul>
+                            </div>
+                            <div class="detail-grid-container-stack">
+                                <div class="work-experience-timeline-two">
+                                    December 2022 - May 2023
+                                </div>
+                                    <ul>
+                                        <li>Developed and integrated autograders into Educational Technology services(eg Blackboard, Codio) encompassing > 400 students to reduce manual effort from 14 days to 4 days.</li>
+                                        <li>Delivered multiple text-diff style testing autograders using C, C++, and Python using pyTest, and Google Test Suite. - Shell Scripting, Linux, Python, C++</li>
+                                        <li>Mentored Teaching Assistants for documentation, and delivering projects. Upheld coding standards. </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-container">
+                <h1>Projects</h1>
+                Hate Speech Detection using Word Embeddings: Built a project that uses hate-based word embeddings
+                to determine whether a tweet is hateful. Used MLP, CNN, and BiLSTM to achieve a best f1 score of 86.5.
+                <h1> Still in Progress</h1>
+            </div>
+            <div class="footer">
+                Contact me: avardh5@uic.edu
+            </div>
         </div>
-        Hello, world
     </body>
 </html>

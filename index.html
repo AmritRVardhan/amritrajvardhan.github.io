@@ -3,196 +3,156 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
         <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <script>
+        <!-- <script>
             $(document).ready(function(){
-                $(".logo-individual-container:first").click(function(){
-                    $(".detail-grid-container-stack:nth-child(2)").css("z-index", 11);
-                    $(".detail-grid-container-stack:first").css("z-index", 111);
-                });
-                $(".logo-individual-container:nth-child(2)").click(function(){
-                    $(".detail-grid-container-stack:nth-child(2)").css("z-index", 111);
-                    $(".detail-grid-container-stack:first").css("z-index", 11);
-                    // alert(2);
-                });
-            });
+                setTimeout(function(){
+                    $(".hi").fadeIn(500)
+                    
+                }, 0);
+                setTimeout(function(){
+                    $(".name").fadeIn(500)
+                    $(".name").fadeOut(1000)
+                }, 1500);
+                setTimeout(function(){
+                    $(".wait").fadeIn(50).delay(2000)
+                    $(".wait").fadeOut(100)
+                }, 3200);
+                setTimeout(function(){
+                    $(".name2").fadeIn(500)
+                }, 5700);
+                setTimeout(function(){
+                    $(".image-container, .location, .social-media").delay(3500).fadeIn(1000)
+                    
+                    
+                }, 6200);
+                setTimeout(function(){
+                    // $('.glitch2').
+                    $('.glitch2').delay(2000).css("display", "flex")
+                    
+                }, 10000)
+            })
+        </script> -->
+        <script>
+            $("document").ready(function(){  //wow look at this shitty coding, stack-overflow link next line
+                $(".hi").fadeIn(500, function(){  // https://stackoverflow.com/questions/56104389/how-do-i-add-fadein-fadeout-javascript-effect-during-images-change-after-a-few-s
+                    $(".hi").fadeOut(1500, function(){
+                        $(".name").fadeIn(500, function(){
+                            $(".name").fadeOut(2000, function(){
+                                $(".wait").delay(1000).fadeIn(100, function(){
+                                    $(".wait").delay(2000).fadeOut(200, function(){
+                                        $(".name2").delay(500).css("display", "flex").hide().fadeIn(500, function(){
+                                            $(".name2").animate({"top" : "147px"}, 2000, function(){
+                                                $(".name2").css("top", "auto");
+                                                $(".image-container, .social-media").css("display", "flex").hide().fadeIn(1000);
+                                                $(".glitch2").css("display", "flex").hide().fadeIn(500)
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
         </script>
     </head>
     <body>
-        <div class="flex-container">
-            <div class="header">
-                <!-- <ul>
-                    <li><a href="#">Top</a></li>
-                    <li><a href="#">Education</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact me</a></li>
-                </ul> -->
-                <ul>
-                    <li><a href="#">Resume</a></li>
-                    <li><a href="https://github.com/AmritRVardhan"><i class="fa fa-github" style="font-size:24px;color:red"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/amrit-raj-vardhan/"><i class="fa fa-linkedin-square" style="font-size:24px;color: #0072b1;"></i></a></li>
-                </ul>
-            </div>
-            
-            <div class="image-container popout">
-                <!-- <img src="./IMG20230429191813-02.jpeg", alt="Self-Portrait", class="rcorners"> -->
-                <div class="flip-container">
+        <div class="one-full-page">
+            <div class="first-page">
+                <div class="hi">
+                    <h1 >Hi, I'm</h1>
+                </div>
+                <div class="name">
+                    <h1>Amrit Raj Vardhan</h1>
+                </div>
+                <div class="wait">
+                    <h1>Wait, let's bring the name back.</h1>
+                </div>
+                <div class="image-container flip-container">
                     <div class="flipper">
                         <div class="front rcorners"></div>
                         <div class="back rcorners">
-                            
                             I am a jack of all trades as a developer. I am passionate about programming. I have worked on Python, C, VBA, Java, C++. I have an impostor syndrome that strives me to work harder. I love to solve problems, be the go-to guy for solutions. Making this website I learned HTML, CSS without any JS. <br>In my free time, I play Chess, Overwatch, AoE2 and learn more about Data Science.
-                            
                         </div>
                     </div>
                 </div>
+                <div class="name2 ">
+                    <h1>Amrit Raj Vardhan</h1>
+                </div>
+                <!-- <div class="location">
+                    <p>Chicago, USA</p>
+                </div> -->
+                <div class="social-media">
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <i class="fas fa-code fa-2x white"></i>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <!-- <div> -->
+                    <!-- test test -->
+                <!-- </div> -->
+                <div class="glitch2"><div class="animation_glitch">More>>></div></div>
             </div>
-            <!-- <div class="image-container popout flip-container"> -->
-                <!-- <img src="IMG20230429191813-02.jpeg", alt="Self-Portrait", class="rcorners"> -->
-                
-            <!-- </div> -->
-            <!-- <div class="image-about-container"></div> -->
-            <div class="about-education-container">
-                <div class="about-container">
-                    <div class="typed">
-                        <h1>
-                            Amrit Raj Vardhan
-                        </h1>
-                        <div id="hideMe">
-                            Look what the recession made me do
-                        </div>
-                    </div>
-                    <div class="lineUp">Hi, I am a Software Developer with a Master's in Computer Science. I have a 3+ years of experience in Banking domain.
-                    My focus is in Machine Learning and Deep Learning involving vision-nlp based tasks with a consideration of ethical AI.
-                    </div>
-                </div>
-                <div class="skills-container lineUp">
-                    <div class="skills-lang">
-                        Languages I speak
-                    </div>
-                    <div class="skills-individual">
-                        Python
-                    </div>
-                    <div class="skills-individual">
-                        C
-                    </div>
-                    <div class="skills-individual">
-                        C++
-                    </div>
-                    <div class="skills-individual">
-                        Java
-                    </div>
-                    <div class="skills-individual">
-                        R
-                    </div>
-                    <div class="skills-individual">
-                        MATLAB
-                    </div>
-                    <div class="skills-individual">
-                        HTML
-                    </div>
-                    <div class="skills-individual">
-                        CSS
-                    </div>
-                    <div class="skills-individual">
-                        SQL
-                    </div>
-                    <div class="break"></div>
-                    <div class="skills-lang">
-                        Dev Tools/Frameworks
-                    </div>
-                    <div class="skills-individual">
-                        Tensorflow
-                    </div>
-                    <div class="skills-individual">
-                        pytorch
-                    </div>
-                    <div class="skills-individual">
-                        Github
-                    </div>
-                    <div class="skills-individual">
-                        AWS
-                    </div>
-                    <div class="skills-individual">
-                        Tableau
-                    </div>
-                    <div class="skills-individual">
-                        BluePrism
-                    </div>
-                    <div class="skills-individual">
-                        JIRA
-                    </div>
-                </div>
-                    
-                
-                <div class="education-container lineUp">
-                    <h1>Education</h1>
-                    <h3>Master's in Computer Science from University Of Illinois, Chicago
-                        <br>
-                        <div id="hover-content" class="gpa-container">
-                            Relevant Courses: Intro to ML, Advanced ML, NLP, Statistical NLP, Socially Responsible AI | GPA 3.77/4
-                        </div>
-                    </h3>
-                    <h3>Bachelor's in Computer Science from Kalinga Institute Of Industrial Technology
-                        <br>
-                        <div id="hover-content" class="gpa-container"> GPA 7.9/10</div>
-                    </h3>
-                    
-                </div>
-            </div>
-            <hr>
             
-            <div class="experience-container">
-                <h1><span>Work Experience</span></h1>
-                <div class = "experience-logo-details-container">
-                    <div class = "logo-container">
-                        <div class="logo-individual-container grow">
-                            <img src="barclays_logo_icon_168535.png" width="256" height="128">
-                        </div>
-                        <div class="logo-individual-container grow">
-                            <img src="university-of-illinois-at-chicago-uic-logo-vector.png" width="256" height="142">
-                        </div>
+        </div>
+        
+        <div class="one-full-page">
+            <div class="second-page">
+                <div class="second-page-columns">
+                    <div>
+                        <h2>About</h2>
+                        <p>I leverage technology to bring in cost saving for your company. 
+                        I am expereienced in Deep Learning, Machine Learning with a strong understanding of the Mathematics and a zealous interest to excel in the same to break out of the imposter syndorme I carry. I am on the path to be a language agnostic developer. 
+                        Here are some of my skills acquired throughout my Software Development experience.</p>
                     </div>
-                    <div class="detail-container">
-                        <div class ="detail-grid-container">
-                            <div class="detail-grid-container-stack">
-                                <div class="work-experience-timeline">
-                                    July 2017 - September 2020
-                                </div>
-                                <ul>
-                                    <li>Lead developer for a Know-Your-Customer project by leveraging BluePrism, VB, VBA, AWS, and jQuery that involved the automation of 3 applications to save 0.5 million USD per year. Was nominated for best deliveries in 2019.</li>
-                                    <li>Designed and developed 4 Robotic Process Automation solutions with RESTful APIs, thereby leading to a total cost saving of 2.25 million USD annually.</li>
-                                    <li>Utilized kNN, K-means to work on car insurance, clustering methods, and Siamese network in PyTorch, and TF to identify car damage on an unlabeled dataset, achieving an impressive 92% accuracy in predicting damaged pairs with the Siamese network.</li>
-                                    <li>Designed multiple end-to-end solution architectures and mentored 5 junior developers.</li>
-                                    <li>Created Software-as-a-service, “Saas”, known as “SRR”,  which processed incoming stock trades coming in from various applications leveraging computer vision techniques such as Tesseract(OCR), thereby reducing the manual efforts of the Asia Pacific team by 48% or 0.75M USD annually.</li>
-                                    <li>Modeled a Classifier using ML models(SVM, k-means, RandomForest) to de-clutter and automatically classify emails for HR. Cross-validation gave an effectiveness of 97%.</li>
-                                </ul>
-                            </div>
-                            <div class="detail-grid-container-stack">
-                                <div class="work-experience-timeline-two">
-                                    December 2022 - May 2023
-                                </div>
-                                    <ul>
-                                        <li>Developed and integrated autograders into Educational Technology services(eg Blackboard, Codio) encompassing > 400 students to reduce manual effort from 14 days to 4 days.</li>
-                                        <li>Delivered multiple text-diff style testing autograders using C, C++, and Python using pyTest, and Google Test Suite. - Shell Scripting, Linux, Python, C++</li>
-                                        <li>Mentored Teaching Assistants for documentation, and delivering projects. Upheld coding standards. </li>
-                                    </ul>
-                            </div>
-                        </div>
+                    <div>
+                        <h2>Education</h2>
+                        <p><b>Master of Science in Computer Science</b> - Univerity Of Illinois, Chicago</p>
+                        <p><b>Bachelor of Technology in Computer Science and Engineering</b> - Kalinga Institute Of Industrial Technology, Bhubaneswar</p>
                     </div>
+                    <div>
+                        <h2>Experience</h2>
+                        <p>
+                        <b style="text-align: left;">Barclays | Software Developer
+                        <span style="float: right;">Jul 2017- Sep 2020</span></b>
+                            <ul>
+                                <li>Lead developer for a Know-Your-Customer project by leveraging BluePrism, VB, VBA, AWS, and jQuery that involved the automation of 3 applications to save 0.5 million USD per year.</li>
+                                <li>Designed and developed 4 Robotic Process Automation solutions with RESTful APIs, thereby leading to a total cost saving of 2.25 million USD annually.</li>
+                                <li>Utilized kNN, K-means to work on car insurance, clustering methods, and Siamese network in PyTorch & TF to identify car damage on unlabeled dataset, achieving an impressive 92% accuracy in predicting damaged pairs.</li>
+                                <li>Designed multiple end-to-end solution architectures and mentored 5 junior developers.</li>
+                                <li>Created SaaS, processed incoming stock trades from various applications, leveraged computer vision techniques, Tesseract(OCR), reducing the manual efforts of the Asia Pacific team by 48%/0.75M USD annually.</li>
+                                <li>Modeled a Classifier using ML models(SVM, k-means, RandomForest) to de-clutter and automatically classify documents for HR. Cross-validation gave an effectiveness of 97%.</li>
+                            </ul>
+                            <b style="text-align: left;">UIC | Senior Software Engineer
+                            <span style="float: right;">Dec 2022- May 2023</span></b>
+                            <ul>
+                                <li>Developed and integrated autograders into Educational Technology services(eg Blackboard, Codio) encompassing > 400 students to reduce manual effort from 14 days to 4 days.</li>
+                                <li>Delivered multiple text-diff style testing autograders using C, C++, and Python using pyTest, and Google Test Suite. - Shell Scripting, Linux, Python, C++</li>
+                                <li>Mentored Teaching Assistants for documentation, and delivering projects. Upheld coding standards. </li>
+                            </ul>
+                        </p>
+                    </div>
+                    </div>  
+                <div class="second-page-columns">
+                    <div>
+                        <h2>Projects</h2>
+                        <div class="list">
+                            <ul>
+                              <li><span><b>Image Caption Generator:</b> Coded an image caption generator using pytorch, TensorFlow, tf-hub. Learned NLP tasks involved, BPTT, RNNs. Used Resnet50 as the encoder and LSTM as the decoder with an attention mechanism. Used GloVe and ELMo word embeddings to learn word representations. Bleu1 score~0.35 - pytorch, tf, tf-hub, gensim</span></li>
+                              <li><span><b>Object Detection:</b> Created an object detection Neural network. Used YOLOv5, and also created CSPDarknet53 architecture and FasterRCNN to understand how object detection works. Used the PASCAL VOC 2007 dataset. - pytorch, YOLO</span></li>
+                              <li><span><b>Hate Speech Detection using Word Embeddings:</b> Built a project that uses hate-based word embeddings to determine whether a tweet is hateful. Used MLP, CNN, and BiLSTM to achieve a best f1 score of 86.5.</span></li>
+                            </ul>
+                        </div>
+                        <h2>Skills</h2>
+                        <img src ="C:/Users/amrit/Downloads/tensorflow-ar21.svg"/>
+                        <h2>Research Papers Implemented</h2>
+                    </div> 
                 </div>
-            </div>
-            <div class="project-container">
-                <h1>Projects</h1>
-                Hate Speech Detection using Word Embeddings: Built a project that uses hate-based word embeddings
-                to determine whether a tweet is hateful. Used MLP, CNN, and BiLSTM to achieve a best f1 score of 86.5.
-                <h1> Still in Progress</h1>
-            </div>
-            <div class="footer">
-                Contact me: avardh5@uic.edu
             </div>
         </div>
+    
     </body>
 </html>

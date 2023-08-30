@@ -1,158 +1,476 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <!-- <script>
-            $(document).ready(function(){
-                setTimeout(function(){
-                    $(".hi").fadeIn(500)
-                    
-                }, 0);
-                setTimeout(function(){
-                    $(".name").fadeIn(500)
-                    $(".name").fadeOut(1000)
-                }, 1500);
-                setTimeout(function(){
-                    $(".wait").fadeIn(50).delay(2000)
-                    $(".wait").fadeOut(100)
-                }, 3200);
-                setTimeout(function(){
-                    $(".name2").fadeIn(500)
-                }, 5700);
-                setTimeout(function(){
-                    $(".image-container, .location, .social-media").delay(3500).fadeIn(1000)
-                    
-                    
-                }, 6200);
-                setTimeout(function(){
-                    // $('.glitch2').
-                    $('.glitch2').delay(2000).css("display", "flex")
-                    
-                }, 10000)
-            })
-        </script> -->
-        <script>
-            $("document").ready(function(){  //wow look at this shitty coding, stack-overflow link next line
-                $(".hi").fadeIn(500, function(){  // https://stackoverflow.com/questions/56104389/how-do-i-add-fadein-fadeout-javascript-effect-during-images-change-after-a-few-s
-                    $(".hi").fadeOut(1500, function(){
-                        $(".name").fadeIn(500, function(){
-                            $(".name").fadeOut(2000, function(){
-                                $(".wait").delay(1000).fadeIn(100, function(){
-                                    $(".wait").delay(2000).fadeOut(200, function(){
-                                        $(".name2").delay(500).css("display", "flex").hide().fadeIn(500, function(){
-                                            $(".name2").animate({"top" : "147px"}, 2000, function(){
-                                                $(".name2").css("top", "auto");
-                                                $(".image-container, .social-media").css("display", "flex").hide().fadeIn(1000);
-                                                $(".glitch2").css("display", "flex").hide().fadeIn(500)
-                                            })
-                                        })
-                                    })
-                                })
-                            })
-                        })
-                    })
-                })
-            })
-        </script>
-    </head>
-    <body>
-        <div class="one-full-page">
-            <div class="first-page">
-                <div class="hi">
-                    <h1 >Hi, I'm</h1>
-                </div>
-                <div class="name">
-                    <h1>Amrit Raj Vardhan</h1>
-                </div>
-                <div class="wait">
-                    <h1>Wait, let's bring the name back.</h1>
-                </div>
-                <div class="image-container flip-container">
-                    <div class="flipper">
-                        <div class="front rcorners"></div>
-                        <div class="back rcorners">
-                            I am a jack of all trades as a developer. I am passionate about programming. I have worked on Python, C, VBA, Java, C++. I have an impostor syndrome that strives me to work harder. I love to solve problems, be the go-to guy for solutions. Making this website I learned HTML, CSS without any JS. <br>In my free time, I play Chess, Overwatch, AoE2 and learn more about Data Science.
-                        </div>
-                    </div>
-                </div>
-                <div class="name2 ">
-                    <h1>Amrit Raj Vardhan</h1>
-                </div>
-                <!-- <div class="location">
-                    <p>Chicago, USA</p>
-                </div> -->
-                <div class="social-media">
-                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <i class="fas fa-code fa-2x white"></i>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <!-- <div> -->
-                    <!-- test test -->
-                <!-- </div> -->
-                <div class="glitch2"><div class="animation_glitch">More>>></div></div>
-            </div>
-            
-        </div>
-        
-        <div class="one-full-page">
-            <div class="second-page">
-                <div class="second-page-columns">
-                    <div>
-                        <h2>About</h2>
-                        <p>I leverage technology to bring in cost saving for your company. 
-                        I am expereienced in Deep Learning, Machine Learning with a strong understanding of the Mathematics and a zealous interest to excel in the same to break out of the imposter syndorme I carry. I am on the path to be a language agnostic developer. 
-                        Here are some of my skills acquired throughout my Software Development experience.</p>
-                    </div>
-                    <div>
-                        <h2>Education</h2>
-                        <p><b>Master of Science in Computer Science</b> - Univerity Of Illinois, Chicago</p>
-                        <p><b>Bachelor of Technology in Computer Science and Engineering</b> - Kalinga Institute Of Industrial Technology, Bhubaneswar</p>
-                    </div>
-                    <div>
-                        <h2>Experience</h2>
-                        <p>
-                        <b style="text-align: left;">Barclays | Software Developer
-                        <span style="float: right;">Jul 2017- Sep 2020</span></b>
-                            <ul>
-                                <li>Lead developer for a Know-Your-Customer project by leveraging BluePrism, VB, VBA, AWS, and jQuery that involved the automation of 3 applications to save 0.5 million USD per year.</li>
-                                <li>Designed and developed 4 Robotic Process Automation solutions with RESTful APIs, thereby leading to a total cost saving of 2.25 million USD annually.</li>
-                                <li>Utilized kNN, K-means to work on car insurance, clustering methods, and Siamese network in PyTorch & TF to identify car damage on unlabeled dataset, achieving an impressive 92% accuracy in predicting damaged pairs.</li>
-                                <li>Designed multiple end-to-end solution architectures and mentored 5 junior developers.</li>
-                                <li>Created SaaS, processed incoming stock trades from various applications, leveraged computer vision techniques, Tesseract(OCR), reducing the manual efforts of the Asia Pacific team by 48%/0.75M USD annually.</li>
-                                <li>Modeled a Classifier using ML models(SVM, k-means, RandomForest) to de-clutter and automatically classify documents for HR. Cross-validation gave an effectiveness of 97%.</li>
-                            </ul>
-                            <b style="text-align: left;">UIC | Senior Software Engineer
-                            <span style="float: right;">Dec 2022- May 2023</span></b>
-                            <ul>
-                                <li>Developed and integrated autograders into Educational Technology services(eg Blackboard, Codio) encompassing > 400 students to reduce manual effort from 14 days to 4 days.</li>
-                                <li>Delivered multiple text-diff style testing autograders using C, C++, and Python using pyTest, and Google Test Suite. - Shell Scripting, Linux, Python, C++</li>
-                                <li>Mentored Teaching Assistants for documentation, and delivering projects. Upheld coding standards. </li>
-                            </ul>
-                        </p>
-                    </div>
-                    </div>  
-                <div class="second-page-columns">
-                    <div>
-                        <h2>Projects</h2>
-                        <div class="list">
-                            <ul>
-                              <li><span><b>Image Caption Generator:</b> Coded an image caption generator using pytorch, TensorFlow, tf-hub. Learned NLP tasks involved, BPTT, RNNs. Used Resnet50 as the encoder and LSTM as the decoder with an attention mechanism. Used GloVe and ELMo word embeddings to learn word representations. Bleu1 score~0.35 - pytorch, tf, tf-hub, gensim</span></li>
-                              <li><span><b>Object Detection:</b> Created an object detection Neural network. Used YOLOv5, and also created CSPDarknet53 architecture and FasterRCNN to understand how object detection works. Used the PASCAL VOC 2007 dataset. - pytorch, YOLO</span></li>
-                              <li><span><b>Hate Speech Detection using Word Embeddings:</b> Built a project that uses hate-based word embeddings to determine whether a tweet is hateful. Used MLP, CNN, and BiLSTM to achieve a best f1 score of 86.5.</span></li>
-                            </ul>
-                        </div>
-                        <h2>Skills</h2>
-                        <img src ="C:/Users/amrit/Downloads/tensorflow-ar21.svg"/>
-                        <h2>Research Papers Implemented</h2>
-                    </div> 
-                </div>
-            </div>
-        </div>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+html{
+    scroll-snap-type: y mandatory;
+    color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101214;
+    color: #7A7C80;
+}
+
+/* *{
+  border: 2px solid white;
+} */
+
+.one-full-page{
+    display: flex;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+}
+
+.first-page{
+    display: flex;
+    flex-flow: column wrap;
+    height: 100vh;
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+.first-page h1{
+    color: #fff;
+    margin-bottom: 0;
+}
+
+
+.display-none{
+    color: #fff;
+}
+
+.hi, .name, .wait, .name2, .location{
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.name2{
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    margin-left: 4px;
+    position: relative;
+}
+
+/* @media screen and (max-width:800px){
+  body{
+    font-size: 2vmin;
+  }
+} */
+
+.location{
+    display: none;
+    position: relative;
+    gap: 50px;
+    text-align: center;
+}
+
+.location p {
+    font-size: 1.3rem;
+    margin:0;
+}
+
+.social-media{
+    color: #7A7C80;
+    padding-top: 10px;
+    display: none;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media a{
+    font-size: 1.5rem;
+    padding: 0px 15px;    
+}
+
+.social-media a:hover{
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.image-container {
+
+    display: none;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.rcorners {
+    margin: 10px;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 0, 0, 0);
+}
+
+.flip-container{
+    perspective: 1000;
+    -o-perspective: 1000;
+    -moz-perspective: 1000;
+    -webkit-perspective: 1000;
+}
+
+.flip-container:hover .flipper,  
+  .flip-container.hover .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+	}
+
+.flipper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
     
-    </body>
-</html>
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+}
+
+.front, .back {
+    -webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	backface-visibility: hidden;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+	/* position: absolute; */
+	/* top: 0; */
+	/* left: 0; */
+}
+
+.front {
+	background: url(https://github.com/AmritRVardhan/SongRecommenderSystem/assets/91703308/67c43e20-d5d4-4bac-8d00-7dd4a1e9c6af) 0 0 no-repeat;
+	/* z-index: 2; */
+}
+
+.flip-container, .front, .back {
+	width: 300px;
+	height: 400px;
+}
+
+.back {
+  display: flex;
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+  color: #fff;
+	background: #101214;
+	position: absolute;
+	margin-top: 10px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	/* padding: 0 20px; */
+    /* font-family: arial; */
+  line-height: 1em;
+  align-items: center;
+  justify-content: center;
+}
+
+.front .name {
+	font-size: 2em;
+	display: flex;
+	background: rgba(33, 33, 33, 0.9);
+	color:#008080;
+	font-family: Courier;
+	padding: 5px 10px;
+	border-radius: 5px;
+	/* bottom: 60px; */
+	/* left: 25%; */
+	position: absolute;
+	text-shadow: 0.1em 0.1em 0.05em #333;
+
+	-webkit-transform: rotate(-20deg);
+	-moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+	transform: rotate(-20deg);
+}
+
+
+@keyframes slidedown {
+    0% { margin-bottom:000px; }
+    20% { margin-bottom:000px; }
+    85% { margin-bottom:-333px; }
+    100% { margin-bottom:-333px; }
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+
+.glitch2{ 
+  display: none;
+  writing-mode: vertical-lr;
+  /* width: 100vw; */
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  background: #131313;
+  color: #7A7C80;
+  font-size: 16px;
+  font-family: 'Fira Mono', monospace;
+  /* letter-spacing: -7px; */
+  /* border: 2px solid white; */
+  /* position: relative; */
+  /* top: 100px; */
+}
+
+.animation_glitch{
+  animation: glitch 1s linear infinite;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(0, 2px) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(0,-2px) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg); 
+  }
+}
+
+.glitch2:before,
+.glitch2:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.glitch2:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg); 
+  }
+}
+
+div:after{
+  animation: glitchBotom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchBotom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg); 
+  }
+}
+
+.second-page{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: normal;
+  align-content: normal;
+  margin: 25px;
+  flex-shrink: 1 ;
+  flex-grow: 1;
+  /* float:left; */
+  /* border: 2px solid white; */
+  /* float: inherit; */
+}
+
+.second-page-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: normal;
+  align-content: normal;
+  max-width: calc(50vw - 50px);
+  /* min-width: calc(50vw - 49px); */
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  
+  order: 0;
+  /* align-self: auto; */
+  /* border: 2px solid white; */
+}
+
+.second-page-columns div{
+  /* border: 2px solid white; */
+  margin:  0px 10px;
+  flex-grow: 1;
+  /* border-right: 1px solid; */
+  /* border-image: linear-gradient(to top, rgb(62, 62, 63), rgb(179, 182, 187)); */
+  /* border-image-slice: 121; */
+}
+
+.second-page-columns h2{
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+.second-page-columns p, li{
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  margin:0;
+  color: #adb1b8;
+}
+
+.second-page-columns a{
+  display: block;
+  padding: 5px;
+  font-size: 1.2rem;
+  padding-left: 0;
+  width: 100px;
+}
+/* animations / utilities */
+.second-page-columns a:hover{
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+b{
+  /* display: block; */
+  color:  #FF404C;
+}
+
+.second-page-columns:first-child ul {
+  display: table-row;
+  list-style: none;
+  border-spacing: 0px 10px;
+}
+
+.second-page-columns:first-child li {
+  display: table-row;
+  color: #ddd;
+  /* border-spacing: 0px 10px; */
+}
+  
+.second-page-columns:first-child li::before {
+  display: table-cell;
+  text-align: right;
+  content: "+";
+  font-size: 1em;
+  font-weight: bold;
+  color: #FF404C;
+  padding-right: 12px;
+  
+}
+
+.list {
+  position: relative;
+}
+.list h2 {
+  color: #fff;
+  font-weight: 70;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+.list ul {
+  position: relative;
+}
+.list ul li {
+  position: relative;
+  left: -10px;
+  color: #fce4ec;
+  list-style: none;
+  margin: 4px 0;
+  border-left: 2px solid #FF404C;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.list ul li:hover {
+  left: 0px;
+}
+.list ul li span {
+  position: relative;
+  padding: 8px;
+  padding-left: 12px;
+  display: inline-block;
+  z-index: 1;
+  transition: 0.5s;
+}
+.list ul li:hover span b{
+  color: #111;
+}
+.list ul li:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FF404C;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s;
+}
+.list ul li:hover:before { 
+  transform: scaleX(1);
+}
+
+svg{
+  height: 32px;
+  width: 32px;
+  margin: 0 2em;
+  
+}
+
+
+
+@media screen and (max-width:800px){
+  html{
+    scroll-snap-type: none;
+  }
+  .second-page{
+    flex-direction: column;
+  }
+  .second-page-columns:nth-child(1){
+    max-width: 100vw;
+    order: 1;
+  }
+  .second-page-columns:nth-child(2){
+    max-width: 100vw;
+    order: 2;
+  }
+}

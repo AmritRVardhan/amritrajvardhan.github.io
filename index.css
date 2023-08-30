@@ -1,697 +1,158 @@
-html, *{
-    /* background-color:black; */
-    margin: 0px;
-    padding: 0px;
-    color: rgb(206, 206, 206);
-    font-family: 'Lexend';
-    /* border: 2px solid #008080; */
-    /* background-color: black; */
-}
-
-body {
-    background-color: black;
-}
-.about-education-container h1{
-    &::before,
-    &::after {
-        display: inline-block;
-        content: "";
-        border-top: .1rem solid rgb(75, 210, 219);
-        width: 12rem;
-        margin: 0 0.5rem;
-        transform: translateY(-0.5rem);
-    }
-}
-
-.h1{
-    display: inline-block;
-    margin: 0 0 0 10px;
-    /* line-height: ; */
-}
-
-.flex-container {
-    display: flex;
-    flex-flow: row wrap;
-    text-align: center;
-    background-color:black;
-}
-
-.flex-container > * {
-    padding: 10px;
-    flex: 1 100%;
-    margin: 0px;
-}
-
-.header{
-    display: flex;
-    padding: 0px;
-    margin-top: 0px;
-    justify-content: flex-end;
-    background-color: black;
-}
-
-.header ul{
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0;
-    list-style-type: none;
-    /* color: #008080; */
-}
-
-.header ul li{
-    display: flex;
-}
-
-.header a{
-    padding: 1em;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    /* color: white; */
-}
-
-.image-container {
-    display: flex;
-    justify-content: right;
-    /* margin-right: 50px; */
-}
-
-.rcorners {
-    margin: 10px;
-    border-radius: 25px;
-    border: 2px solid rgb(0, 0, 0, 0);
-    width: auto;
-    height: auto;
-}
-
-.flip-container{
-    perspective: 1000;
-    -o-perspective: 1000;
-    -moz-perspective: 1000;
-    -webkit-perspective: 1000;
-}
-
-.flip-container:hover .flipper,  
-  .flip-container.hover .flipper {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
-	}
-
-.flipper {
-    -webkit-transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-
-    -moz-transition: 0.6s;
-    -moz-transform-style: preserve-3d;
-    
-    -o-transition: 0.6s;
-    -o-transform-style: preserve-3d;
-
-    transition: 0.6s;
-    transform-style: preserve-3d;
-
-    position: relative;
-}
-
-.front, .back {
-    -webkit-backface-visibility: hidden;
-	-moz-backface-visibility: hidden;
-    -o-backface-visibility: hidden;
-	backface-visibility: hidden;
-
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.front {
-	background: url(https://github.com/AmritRVardhan/SongRecommenderSystem/assets/91703308/67c43e20-d5d4-4bac-8d00-7dd4a1e9c6af) 0 0 no-repeat;
-	/* z-index: 2; */
-}
-
-.flip-container, .front, .back {
-	width: 300px;
-	height: 400px;
-}
-
-.back {
-    display: flex;
-	-webkit-transform: rotateY(180deg);
-	-moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-	transform: rotateY(180deg);
-    color: #008080;
-	background: #f8f8f8;
-	position: absolute;
-	margin-top: 10px;
-	left: 0;
-	right: 0;
-	text-align: center;
-	padding: 0 20px;
-    /* font-family: arial; */
-    line-height: 1em;
-    align-items: center;
-    justify-content: center;
-}
-
-.front .name {
-	font-size: 2em;
-	display: inline-block;
-	background: rgba(33, 33, 33, 0.9);
-	color:#008080;
-	font-family: Courier;
-	padding: 5px 10px;
-	border-radius: 5px;
-	/* bottom: 60px; */
-	left: 25%;
-	position: absolute;
-	text-shadow: 0.1em 0.1em 0.05em #333;
-
-	-webkit-transform: rotate(-20deg);
-	-moz-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-	transform: rotate(-20deg);
-}
-
-.about-container {
-    display: flex;
-    justify-items:left;
-    align-items: center;
-}
-
-.education-container {
-    display: flex;
-    justify-items:flex-start;
-    align-items: flex-start;
-    color: white;
-}
-
-.skills-container {
-    display: flex;
-    justify-items:left;
-    align-items: center;
-    
-}
-
-.skills-container{
-    display: flex;
-    flex: 2 0 0;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: stretch;
-}
-
-.skills-lang{
-    margin-top: 20px;
-    margin-left: 10px;
-    background-color: white;
-    color: #008080;
-    padding: 0.6rem 1.5rem;
-    margin-bottom: 1rem;
-    margin-right: 1rem;
-    border-radius: 5px;
-    min-width: 150px;
-}
-
-.break {
-    flex-basis: 100%;
-    height: 0;
-}
-
-.skills-individual {
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 0.6rem 1.1rem;
-    margin-bottom: 1rem;
-    margin-right: 0.4rem;
-    border-radius: 5px;
-    background-color: #008080;
-    /* background-image: linear-gradient(to bottom right, rgba(153,153,153,.2) 80%, #44808b 20% ) */
-}
-
-/* .border{
-    border: 8px solid #666;
-  } */
-
-#hover-content{
-    position: absolute;
-    opacity: 0;
-    visibility: hidden;   
-}
-
-h3:hover #hover-content{
-    position: static;
-    display: inline-block;
-    visibility: visible;
-    opacity: 1;
-    transition:1s;
-    -webkit-transition:1s;
-}
-
-.gpa-container{
-    background-color: white;
-    color: #008080;
-    padding: 0.2rem 0.5rem;
-    border-radius: 5px;
-    /* max-width: 100px; */
-    text-align: center;
-}
-
-.lineUp {
-    animation: 3s anim-lineUp ease-in-out;
-    animation-iteration-count: 1;
-    line-height: 22px;
-}
-
-@keyframes anim-lineUp {
-    0% {
-      opacity: 0;
-      transform: translateY(100%);
-      visibility: hidden;
-    }
-    50% {
-      opacity: 0;
-      transform: translateY(30%);
-      visibility: hidden;     
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-}
-
-.experience-container img{
-    display: flex;
-    filter: gray;
-    -webkit-filter: grayscale(1);
-    filter: grayscale(1);
-    transition: 0.2s ease-in;
-}
-
-.experience-container img:hover{
-    -webkit-filter: grayscale(0);
-    filter: none;
-}
-
-.experience-container {
-    display: flex;
-    flex-direction: column;
-    max-width: 1680px;
-    margin: 50px 40px 0% 100px;
-    align-self: center;
-    text-align: left;
-    color: #44808b;
-}
-
-.experience-logo-details-container {
-    display: flex;
-    /* flex: 1 0 0; */
-    justify-content: left;
-    justify-content: space-around;
-    /* border: 2px solid #008080; */
-}
-
-.logo-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    /* flex-shrink: 1; */
-    flex-basis: auto;
-    align-self: auto;
-    /* border: 2px solid #008080; */
-    min-width: 280px;
-}
-
-.logo-individual-container{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    flex-wrap: nowrap;
-    /* flex-shrink: 1; */
-    flex-basis: auto;
-    align-self: auto;
-    margin: 5%;
-    /* border-radius: 20px; */
-    /* border: 2px solid #008080; */
-}
-
-.logo-individual-container:first-child img{
-    border-radius: 5px;
-    background: rgb(0,0,0);
-    background: linear-gradient(315deg, rgba(0,0,0,1) 43%, rgba(2,172,207,255) 100%);
-}
-
-.grow {
-    transition: all .2s ease-in-out;
-}
-
-.grow:hover {
-    transform: scale(1.05);
-}
-
-.detail-container {
-    flex: 3 1 auto ;
-    flex-direction: column;
-    display: flex;
-    font-size: large;
-    align-items: center;
-    justify-content: center;
-    margin-left: 30px;
-    line-height: 22px;
-}
-
-.detail-grid-container{
-    display: grid;
-    /* letter-spacing: -0.5px; */
-    /* place-items: center; */
-    position: relative;
-    grid-template-areas: "stack-div";
-    height: 100%;
-}
-
-.detail-grid-container-stack{
-    border-radius: 10px;
-    position: relative;
-    grid-area: stack-div;
-    z-index: 0;
-    height: 100%;
-    padding: 10px;
-    border: 1px solid #333;
-    max-height: 90%;
-    font-size: 17px;
-    margin-top: 15px;
-    /* padding-left: 30px; */
-    
-}
-
-.detail-grid-container-stack ul{
-    padding-left: 30px;
-}
-.detail-grid-container-stack ul li{
-    padding-bottom: 10px;
-}
-.detail-grid-container-stack:first-child{
-    position: relative;
-    z-index: 1111;
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 43%, rgba(0,128,128,1) 100%);
-    height: 100%;
-}
-
-.detail-grid-container-stack:nth-child(2){
-    position: relative;
-    z-index: 200;
-    background: rgb(0,0,0);
-    background: linear-gradient(315deg, rgba(0,0,0,1) 43%, rgba(0,128,128,1) 100%);
-    height: 100%;
-}
-
-.work-experience-timeline{
-    /* display: flex; */
-    /* line-height: 22px; */
-    padding: 0.3rem 0.4rem;
-    border-radius: 5px;
-    background-color: white;
-    color: #008080;
-    max-width: 230px;
-    margin-bottom: 10px;
-}
-
-.work-experience-timeline-two{
-    /* display: flex; */
-    padding: 0.3rem 0.4rem;
-    border-radius: 5px;
-    background-color: white;
-    color: #008080;
-    max-width: 228px;
-    margin-bottom: 10px;
-}
-/* .detail-grid-container:nth-child(2) > .detail-grid-container-stack > .work-experience-timeline { */
-    /* max-width: 258px; */
-    /* border: 2px solid #008080; */
-/* } */
-
-
-
-.logo-individual-container:nth-child(2) img{
-    border-radius: 5px; 
-    background: rgb(0,0,0);
-    background: linear-gradient(135deg, rgba(0,0,0,1) 43%, rgba(219,0,50,255) 100%);
-}
-
-.underline {
-    border-bottom: 1px solid #008080;
-    border-bottom-width: 4px;
-}
-
-/* .experience-container ul {
-    display: block;
-    margin-left: 60px;
-} */
-
-/* .experience-container ul li {
-    display: block;
-    position: relative;
-    margin-left: 30px;
-    /* background: #333231; */
-  /* } */
-   
-/* .experience-containerul li:not(:last-child) {
-    margin-bottom: 16px;
-    
-} */
-  
-/* .experience-container div ul li:before {
-    content: "";
-    position: absolute;
-    top: 1.2em;
-    left: -30px;
-    margin-top: -.9em;
-    background: #008080;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-} */
-
-
-
-.project-container {
-    margin-top: 10px;
-    text-align: left;
-    margin-left: 100px;
-}
-
-.slideIn {
-    animation: 0.4s slide-in ease-in;
-    animation-iteration-count: 1;
-}
-
-.popout {
-    animation: popout 0.5s ease;
-}
-
-@keyframes popout{
-    from{transform:scale(0)}
-    70%{transform:scale(1.2)}
-    to{transform:scale(1)}
-}
-
-@-webkit-keyframes popout {
-    from{-webkit-transform:scale(0)}
-    80%{-webkit-transform:scale(1.2)}
-    to{-webkit-transform:scale(1)}
-} 
-
-
-@keyframes typing {
-    from { width: 0;}
-    to { width: 100%;}    
-}
-
-.typed {
-    overflow: hidden;
-    white-space: nowrap;
-    width: 0;
-    animation: typing;
-    animation-duration: 1.5s;
-    animation-timing-function: steps(30, end);
-    animation-fill-mode: forwards;
-}
-
-#hideMe {
-    -moz-animation: cssAnimation 0s ease-in 1s forwards;
-    /* Firefox */
-    -webkit-animation: cssAnimation 0s ease-in 1s forwards;
-    /* Safari and Chrome */
-    -o-animation: cssAnimation 0s ease-in 1s forwards;
-    /* Opera */
-    animation: cssAnimation 0s ease-in 1s forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
-}
-@keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        overflow:hidden;
-    }
-}
-@-webkit-keyframes cssAnimation {
-    to {
-        width:0;
-        height:0;
-        visibility:hidden;
-    }
-}
-
-#hideClass{
-    animation: hidehr 1s ease-in 1s 1s forwards ;
-}
-@keyframes hidehr {
-    from{
-        width: 0;
-        height: 0;
-        visibility: hidden;
-    }
-}
-
-.header a:hover{
-    background-color:#008080;
-}
-
-.flex-container hr {
-    flex-basis: 100%;
-    height: 0;
-    margin: 0;
-    border: 0;
-}
-
-@media all and (min-width: 800px) {
-    .flex-container{
-        flex-flow: row wrap;
-    }
-
-    .image-container {
-        flex: 1 0 0;
-        justify-content: center;
-        /* margin: 10px 0 0 10px; */
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <!-- <script>
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $(".hi").fadeIn(500)
+                    
+                }, 0);
+                setTimeout(function(){
+                    $(".name").fadeIn(500)
+                    $(".name").fadeOut(1000)
+                }, 1500);
+                setTimeout(function(){
+                    $(".wait").fadeIn(50).delay(2000)
+                    $(".wait").fadeOut(100)
+                }, 3200);
+                setTimeout(function(){
+                    $(".name2").fadeIn(500)
+                }, 5700);
+                setTimeout(function(){
+                    $(".image-container, .location, .social-media").delay(3500).fadeIn(1000)
+                    
+                    
+                }, 6200);
+                setTimeout(function(){
+                    // $('.glitch2').
+                    $('.glitch2').delay(2000).css("display", "flex")
+                    
+                }, 10000)
+            })
+        </script> -->
+        <script>
+            $("document").ready(function(){  //wow look at this shitty coding, stack-overflow link next line
+                $(".hi").fadeIn(500, function(){  // https://stackoverflow.com/questions/56104389/how-do-i-add-fadein-fadeout-javascript-effect-during-images-change-after-a-few-s
+                    $(".hi").fadeOut(1500, function(){
+                        $(".name").fadeIn(500, function(){
+                            $(".name").fadeOut(2000, function(){
+                                $(".wait").delay(1000).fadeIn(100, function(){
+                                    $(".wait").delay(2000).fadeOut(200, function(){
+                                        $(".name2").delay(500).css("display", "flex").hide().fadeIn(500, function(){
+                                            $(".name2").animate({"top" : "147px"}, 2000, function(){
+                                                $(".name2").css("top", "auto");
+                                                $(".image-container, .social-media").css("display", "flex").hide().fadeIn(1000);
+                                                $(".glitch2").css("display", "flex").hide().fadeIn(500)
+                                            })
+                                        })
+                                    })
+                                })
+                            })
+                        })
+                    })
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="one-full-page">
+            <div class="first-page">
+                <div class="hi">
+                    <h1 >Hi, I'm</h1>
+                </div>
+                <div class="name">
+                    <h1>Amrit Raj Vardhan</h1>
+                </div>
+                <div class="wait">
+                    <h1>Wait, let's bring the name back.</h1>
+                </div>
+                <div class="image-container flip-container">
+                    <div class="flipper">
+                        <div class="front rcorners"></div>
+                        <div class="back rcorners">
+                            I am a jack of all trades as a developer. I am passionate about programming. I have worked on Python, C, VBA, Java, C++. I have an impostor syndrome that strives me to work harder. I love to solve problems, be the go-to guy for solutions. Making this website I learned HTML, CSS without any JS. <br>In my free time, I play Chess, Overwatch, AoE2 and learn more about Data Science.
+                        </div>
+                    </div>
+                </div>
+                <div class="name2 ">
+                    <h1>Amrit Raj Vardhan</h1>
+                </div>
+                <!-- <div class="location">
+                    <p>Chicago, USA</p>
+                </div> -->
+                <div class="social-media">
+                    <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <i class="fas fa-code fa-2x white"></i>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <!-- <div> -->
+                    <!-- test test -->
+                <!-- </div> -->
+                <div class="glitch2"><div class="animation_glitch">More>>></div></div>
+            </div>
+            
+        </div>
         
-        /* max-width: 620px; */
-    }
-
-    .about-education-container {
-        margin: 0px;
-        margin-right: 90px;
-        padding: 0px;
-        display: flex;
-        flex-direction: column;
-        flex: 2 0 0;
-        /* border: 2px solid #008080; */
-        /* max-width:  900px; */
-    }
-
-    .about-container {
-        flex: 1 0 0 ;
-        flex-direction: column;
-        display: flex;
-        font-size: large;
-    }
+        <div class="one-full-page">
+            <div class="second-page">
+                <div class="second-page-columns">
+                    <div>
+                        <h2>About</h2>
+                        <p>I leverage technology to bring in cost saving for your company. 
+                        I am expereienced in Deep Learning, Machine Learning with a strong understanding of the Mathematics and a zealous interest to excel in the same to break out of the imposter syndorme I carry. I am on the path to be a language agnostic developer. 
+                        Here are some of my skills acquired throughout my Software Development experience.</p>
+                    </div>
+                    <div>
+                        <h2>Education</h2>
+                        <p><b>Master of Science in Computer Science</b> - Univerity Of Illinois, Chicago</p>
+                        <p><b>Bachelor of Technology in Computer Science and Engineering</b> - Kalinga Institute Of Industrial Technology, Bhubaneswar</p>
+                    </div>
+                    <div>
+                        <h2>Experience</h2>
+                        <p>
+                        <b style="text-align: left;">Barclays | Software Developer
+                        <span style="float: right;">Jul 2017- Sep 2020</span></b>
+                            <ul>
+                                <li>Lead developer for a Know-Your-Customer project by leveraging BluePrism, VB, VBA, AWS, and jQuery that involved the automation of 3 applications to save 0.5 million USD per year.</li>
+                                <li>Designed and developed 4 Robotic Process Automation solutions with RESTful APIs, thereby leading to a total cost saving of 2.25 million USD annually.</li>
+                                <li>Utilized kNN, K-means to work on car insurance, clustering methods, and Siamese network in PyTorch & TF to identify car damage on unlabeled dataset, achieving an impressive 92% accuracy in predicting damaged pairs.</li>
+                                <li>Designed multiple end-to-end solution architectures and mentored 5 junior developers.</li>
+                                <li>Created SaaS, processed incoming stock trades from various applications, leveraged computer vision techniques, Tesseract(OCR), reducing the manual efforts of the Asia Pacific team by 48%/0.75M USD annually.</li>
+                                <li>Modeled a Classifier using ML models(SVM, k-means, RandomForest) to de-clutter and automatically classify documents for HR. Cross-validation gave an effectiveness of 97%.</li>
+                            </ul>
+                            <b style="text-align: left;">UIC | Senior Software Engineer
+                            <span style="float: right;">Dec 2022- May 2023</span></b>
+                            <ul>
+                                <li>Developed and integrated autograders into Educational Technology services(eg Blackboard, Codio) encompassing > 400 students to reduce manual effort from 14 days to 4 days.</li>
+                                <li>Delivered multiple text-diff style testing autograders using C, C++, and Python using pyTest, and Google Test Suite. - Shell Scripting, Linux, Python, C++</li>
+                                <li>Mentored Teaching Assistants for documentation, and delivering projects. Upheld coding standards. </li>
+                            </ul>
+                        </p>
+                    </div>
+                    </div>  
+                <div class="second-page-columns">
+                    <div>
+                        <h2>Projects</h2>
+                        <div class="list">
+                            <ul>
+                              <li><span><b>Image Caption Generator:</b> Coded an image caption generator using pytorch, TensorFlow, tf-hub. Learned NLP tasks involved, BPTT, RNNs. Used Resnet50 as the encoder and LSTM as the decoder with an attention mechanism. Used GloVe and ELMo word embeddings to learn word representations. Bleu1 score~0.35 - pytorch, tf, tf-hub, gensim</span></li>
+                              <li><span><b>Object Detection:</b> Created an object detection Neural network. Used YOLOv5, and also created CSPDarknet53 architecture and FasterRCNN to understand how object detection works. Used the PASCAL VOC 2007 dataset. - pytorch, YOLO</span></li>
+                              <li><span><b>Hate Speech Detection using Word Embeddings:</b> Built a project that uses hate-based word embeddings to determine whether a tweet is hateful. Used MLP, CNN, and BiLSTM to achieve a best f1 score of 86.5.</span></li>
+                            </ul>
+                        </div>
+                        <h2>Skills</h2>
+                        <img src ="C:/Users/amrit/Downloads/tensorflow-ar21.svg"/>
+                        <h2>Research Papers Implemented</h2>
+                    </div> 
+                </div>
+            </div>
+        </div>
     
-    .education-container h1{
-        text-decoration-thickness: 1px;
-        margin-bottom: 10px;
-    }
-
-    .education-container{
-        flex: 2 0 0;
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (max-width:800px){
-    .header a{
-        padding: 0.8em;
-    }
-
-    .header{
-        justify-content: space-evenly;
-        padding: 0px;
-    }
-
-    .skills-lang{
-        margin-top: 5px;
-        margin-left: 10px;
-        background-color: white;
-        color: #008080;
-        padding: 0.3rem 0.8rem;
-        margin-bottom: 5px;
-        margin-right: 10px;
-        border-radius: 5px;
-        min-width: 150px;
-    }
-    
-    .break {
-        flex-basis: 100%;
-        height: 0;
-    }
-    
-    .skills-individual {
-        margin-top:5px;
-        margin-left: 5px;
-        padding: 0.3rem 0.2rem;
-        margin-bottom: 5px;
-        margin-right: 5px;
-        border-radius: 5px;
-        background-color: #008080;
-    }
-
-    .image-container{
-        display: flex;
-        justify-content: center;
-    }
-    .about-container{
-        display: inline-block;
-    }
-    .education-container{
-        display: inline-block;
-    }
-    
-    .h1{
-        width: 100%;
-    }
-}
-
-.effect {
-    position: relative;
-    display: inline-block;
-    overflow:hidden;
-  }
-  
-  .effect:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    animation: width 2s ease-in-out infinite;
-    mix-blend-mode: color;
-    background: linear-gradient(blue,red);
-  }
-  
-  @keyframes width {
-    from {
-      transform:translateX(-100%);
-    }
-    to {
-      transform:translateX(100%);
-    }
-  }
+    </body>
+</html>

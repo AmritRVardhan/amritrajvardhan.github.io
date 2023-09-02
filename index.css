@@ -409,6 +409,11 @@ b{
   
 }
 
+.great-a-new-div{
+  clear: both;
+}
+
+
 .list {
   position: relative;
 }

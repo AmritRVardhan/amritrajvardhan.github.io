@@ -386,6 +386,7 @@ b{
 }
 
 .second-page-columns:first-child ul {
+  clear: both;
   display: table-row;
   list-style: none;
   border-spacing: 0px 10px;
